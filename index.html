@@ -1,21 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>EliasHaugsbakk</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
 
-<h1>Elias Haugsbakk's website</h1>
-<p>Hello!
-  <a href="https://www.github.com/eliashaugsbakk.com/">GitHub</a>
-  Want to sacrifice some of your Bitcoin?: "Bitcoin adress goes here"
+<h2>Hello!</h2>
+<p>Hi! Check out my GitHub to see all the projects that i have not finished.</p>
+<p>My Website developemend skills are not any better than my other skills :((   You should lower youre expectations if you have not done so already.</p>
+
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://github.com/eliashaugsbakk">GitHub</a></li>
+    </ul>
+  </nav>
   
-  Or maby some Monero?: "Monero adress goes here"
-  
-</p>
+  <article>
+    <h1></h1>
+    <p>Want to sacrefice some money? plz use vipps to +47-92114696 or send some gold or othe rare metals to "Moholt Allmenning 5, 7050 Moholt"</p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>email: elias.haugsbakk@gmail.com</p>
+  <p>Mail to "Moholt Allmenning 5, 7050 Moholt" - Use <a href="/gpg">GPG</a></li>on your letters. I love typing random caracters to tekst files!</p>
+</footer>
+
 </body>
 </html>
+
