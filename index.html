@@ -1,131 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elias Haugsbakk</title>
+<title>EliasHaugsbakk</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  header {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 2.5rem;
-  }
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-  h2, h1 {
-    margin-bottom: 15px;
-  }
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
 
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  nav {
-    flex: 1 1 250px;
-    background-color: #ddd;
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 8px;
-  }
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
 
-  nav ul {
-    list-style: none;
-  }
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
 
-  nav a:hover {
-    color: #0077cc;
-  }
-
-  article {
-    flex: 3 1 500px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  article img {
-    max-width: 100%;
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
   }
-
-  footer {
-    background-color: #555;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
-
-  footer a {
-    color: #ffc107;
-    text-decoration: none;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 768px) {
-    section {
-      flex-direction: column;
-    }
-    nav {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
+}
 </style>
 </head>
 <body>
 
+<h2>Hello!</h2>
+<p>Hi! Check out my GitHub to see all the projects that i have not finished.</p>
+<p>My Website developemend skills are not any better than my other skills :((   You should lower youre expectations if you have not done so already.</p>
+
 <header>
-  Elias Haugsbakk
+  <h2></h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="https://github.com/eliashaugsbakk" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/eliashaugsbakk">GitHub</a></li>
     </ul>
   </nav>
-
+  
   <article>
-    <h1>Hello!</h1>
-    <p>Check out my GitHub to see all the projects I haven't finished yet.</p>
-    <p>My web development skills are not much better than my other skills, so you should probably lower your expectations if you haven't already.</p>
-    <p>Want to sacrefice some money? Vipps to (+47-92114696) or gold or other rare metals to "Moholt Allmenning 5, 7050 Moholt".</p>
-    <img src="assets/me.jpg" alt="Picture of Elias Haugsbakk">
+    <h1></h1>
+    <p>Want to sacrefice some money? plz use vipps to +47-92114696 or send some gold or othe rare metals to "Moholt Allmenning 5, 7050 Moholt"</p>
+    <img src="assets/me.jpg" alt="Picture of me!">
   </article>
 </section>
 
 <footer>
-  <p>Email: <a href="mailto:elias.haugsbakk@gmail.com">elias.haugsbakk@gmail.com</a></p>
-  <p>Send letters to "Moholt Allmenning 5, 7050 Moholt" — Pease use <a href="/gpg">GPG</a> for encryption. I enjoy typing random characters into text files!</p>
+  <p>email: elias.haugsbakk@gmail.com</p>
+  <p>Mail to "Moholt Allmenning 5, 7050 Moholt" - If you would like, you can use <a href="/gpg">GPG</a></li> on your letters. I love typing random caracters to tekst files!</p>
 </footer>
 
 </body>
